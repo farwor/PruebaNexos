@@ -1,0 +1,58 @@
+﻿@model WebApp.Entity.LibroEntity
+
+@{
+    ViewData["Title"] = "Editar libro";
+}
+
+<h1>Editar</h1>
+
+<h4>libro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idLibro" class="control-label"></label>
+                <input asp-for="idLibro" class="form-control" />
+                <span asp-validation-for="idLibro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lbrTitulo" class="control-label"></label>
+                <input asp-for="lbrTitulo" class="form-control" />
+                <span asp-validation-for="lbrTitulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lbrAnio" class="control-label"></label>
+                <input asp-for="lbrAnio" class="form-control" />
+                <span asp-validation-for="lbrAnio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LbrGenero" class="control-label"></label>
+                <input asp-for="LbrGenero" class="form-control" />
+                <span asp-validation-for="LbrGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lbrNumPag" class="control-label"></label>
+                <input asp-for="lbrNumPag" class="form-control" />
+                <span asp-validation-for="lbrNumPag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idAutor" class="control-label"></label>
+                <input asp-for="idAutor" class="form-control" />
+                <span asp-validation-for="idAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

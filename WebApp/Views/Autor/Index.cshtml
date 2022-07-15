@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebApp.Entity.AutorEntity>
+
+@{
+    ViewData["Title"] = "Autor";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#buscar").keyup(function () {
+            _this = this;
+            $.each($("#tblAutor tbody tr"), function () {
+                if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                    $(this).hide();
+                else
+                    $(this).show();
+            });
+        });
+    });
+
+</script>
+
+<center> <h1>Registros Autor</h1></center>
+<div class="form-group">
+    <input type="text" class="form-control pull-right" style="width:20%;" id="buscar" placeholder="Ingrese un dato para buscar...">
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Crear Autor</a>
+    </p>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped" id="tblAutor">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdAutor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutNombreCompleto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutFchNacimiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutCiudad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutCorreo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAutor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutNombreCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutFchNacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutCiudad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutCorreo)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new {  id=item.IdAutor  }) |
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Eliminar", "Delete", new {  id=item.IdAutor  },
+                    new { onclick = "return confirm('¿Seguro que quiere Eliminar el Registro " + item.IdAutor + "?')" })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

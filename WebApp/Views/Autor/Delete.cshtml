@@ -1,0 +1,50 @@
+﻿@model WebApp.Entity.AutorEntity
+
+@{
+    ViewData["Title"] = "Eliminar autor";
+}
+
+<h1>Eliminar autor</h1>
+
+<h3>¿Está seguro de eliminar el registro?</h3>
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAutor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAutor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AutNombreCompleto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AutNombreCompleto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AutFchNacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AutFchNacimiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AutCiudad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AutCiudad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AutCorreo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AutCorreo)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar autor" class="btn btn-danger" /> |
+        <a asp-action="Index">Regresar</a>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+C:\Users\adiva\source\repos\Servicios\bin\Debug\net6.0\Servicios.deps.json
+C:\Users\adiva\source\repos\Servicios\bin\Debug\net6.0\Servicios.dll
+C:\Users\adiva\source\repos\Servicios\bin\Debug\net6.0\Servicios.pdb
+C:\Users\adiva\source\repos\Servicios\bin\Debug\net6.0\Datos.dll
+C:\Users\adiva\source\repos\Servicios\bin\Debug\net6.0\Datos.pdb
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.csproj.AssemblyReference.cache
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.AssemblyInfoInputs.cache
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.AssemblyInfo.cs
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.csproj.CopyComplete
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.dll
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\refint\Servicios.dll
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\Servicios.pdb
+C:\Users\adiva\source\repos\Servicios\obj\Debug\net6.0\ref\Servicios.dll

@@ -1,0 +1,12 @@
+C:\Users\adiva\source\repos\Datos\bin\Debug\net6.0\Datos.deps.json
+C:\Users\adiva\source\repos\Datos\bin\Debug\net6.0\Datos.dll
+C:\Users\adiva\source\repos\Datos\bin\Debug\net6.0\Datos.pdb
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.csproj.AssemblyReference.cache
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.AssemblyInfoInputs.cache
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.AssemblyInfo.cs
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.dll
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\refint\Datos.dll
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\adiva\source\repos\Datos\obj\Debug\net6.0\ref\Datos.dll
